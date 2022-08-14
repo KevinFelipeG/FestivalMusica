@@ -1,0 +1,43 @@
+@use '../base/variables' as v;
+// MIXIN DE EJEMPLO
+// @mixin heading($color: black, $border-radius: false) { //Se coloda $variable: color para colocarlo por defauld para que no salga error
+//     text-transform: uppercase;
+//     font-size: 2.4rem;
+//     color: $color;
+//     letter-spacing: 1px;
+//     background-color: black;
+
+//     @if $border-radius { //es que if sirve para colocar cierto parametro y enviarle true para activarlo
+//         border-radius: 1rem;
+//     }
+// }
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content; //en lo que nos ayuda el content, es a crar codigo en donde es invoque el mixin y crear codigo de bloque
+    }
+}
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content; //en lo que nos ayuda el content, es a crar codigo en donde es invoque el mixin y crear codigo de bloque
+    }
+}
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content; //en lo que nos ayuda el content, es a crar codigo en donde es invoque el mixin y crear codigo de bloque
+    }
+}
+@mixin desktop {
+    @media (min-width: v.$desktopXL) {
+        @content; //en lo que nos ayuda el content, es a crar codigo en donde es invoque el mixin y crear codigo de bloque
+    }
+}
+@mixin grid ($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+@mixin resetear-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

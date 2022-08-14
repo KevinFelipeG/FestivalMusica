@@ -1,0 +1,37 @@
+{
+  "name": "festivalmusica_inicio",
+  "version": "1.0.0",
+  "description": "proyecto con gulp, sass y html",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "css": "gulp css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinFelipeG/FestivalMusica.git"
+  },
+  "keywords": [
+    "Sass",
+    "gulp"
+  ],
+  "author": "Kevin Felipe Gordillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinFelipeG/FestivalMusica/issues"
+  },
+  "homepage": "https://github.com/KevinFelipeG/FestivalMusica#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.54.4"
+  }
+}

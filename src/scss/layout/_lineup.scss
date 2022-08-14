@@ -1,0 +1,66 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.lineup { 
+    background-color: v.$rosa;
+    padding: 5rem 0;
+    h3 , p {
+        text-align: center;
+        color: v.$blanco;
+    }
+    .dia {
+        text-transform: uppercase; //para colocar todo en mayuscula
+        margin: 5rem 0; //para darle espacio
+    }
+}
+.escenarios-contenedor {
+    @include m.tablet {
+        @include m.grid(2, 5rem)
+    }
+    p{
+        color: v.$negro;
+    }
+    .escenario{
+        padding-top: 2rem;
+        .nombre-escenario {
+            &::after { //Ceudo Elemento
+                content: '';
+                display: block;
+                width: 20rem;
+                height: 10rem;
+                background-size: 15rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 2rem auto 0 auto;
+            }
+        }
+    }
+}
+.edm .nombre-escenario::after{
+    background-image: url(../img/icono_edm.png);
+}
+.rock .nombre-escenario::after{
+    background-image: url(../../../build/img/icono_rock.png);
+}
+.calendario{
+    @include m.resetear-lista;
+    li{
+        padding: 2.5rem;
+        font-weight: 700; //tamaño del grueso de la letra entre mator numero mas greusa es la letra tipo negrilla
+        span {
+            font-weight: 400;
+        }
+    }
+}
+.bg-amarillo {
+    background-color: v.$amarillo;
+    li:nth-child(odd){ //Lo que hace es seleccionar los numero impares con la ayuda de odd //css
+        background-color: darken($color:v.$amarillo, $amount: 17%); //codigo scss(sass)
+    }
+}
+.bg-verde{
+    background-color: v.$verde;
+    li:nth-child(odd){ //Lo que hace es seleccionar los numero impares con la ayuda de odd //css
+        background-color: darken($color:v.$verde, $amount: 10%); //codigo scss(sass)
+    }
+}

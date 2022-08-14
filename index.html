@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rock & EDM Festival</h1>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">Boletos</a>
+            </nav>
+        </div>
+    </header>
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Rock & EDM Festival</h2>
+                <p>Julio 2022, Bogota DC, Colombia.</p>  
+            </div>  
+        </div>
+        <video autoplay muted loop> <!--autoplay para reproducir el video / muted para que el video no tenga sonido / loop para que el video no pare / controls para habilitar los controles-->
+            <source src="video/concierto.mp4" type="Video/mp4">
+            <source src="video/concierto.ogg" type="Video/ogg">
+            <source src="video/concierto.webm" type="Video/webm">
+        </video>
+    </div>
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="imagen_vocalista/avif"> 
+                <source srcset="build/img/imagen_vocalista.webp" type="imagen_vocalista/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="Imagen Vocalista">            
+            </picture>
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha">Julio 2022, Bogota DC, Colombia.</p> 
+            <p>
+                Sin dudas Gojira en Colombia 🟡🔵🔴 2️⃣0️⃣2️⃣2️⃣, será uno de los shows más esperados por la comunidad rockera metalera en el país, este show es obligatorio
+                e imperdible tanto para el melómano más recalcitrante como para el más casual escucha .,Vamos a vender el Movistar Arena Colombia⚡ el próximo 4 de
+                septiembre, Por primera vez Gojira en 🟡🔵🔴 2️⃣0️⃣2️⃣2️⃣, una de las bandas de metal más importante del momento🔥.
+            </p> 
+        </div>
+    </section>
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+        <p class="dia">Viernes 21</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo"> <!--Primer escenario Rock-->
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 Seconds to Mars</span>
+                    </li>               
+                 </ul>
+            </div><!--.Termina Escenario 1 Rock-->
+            <div class="escenario edm bg-verde"> <!--Primer escenario EDM-->
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tiesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Dash Berlin</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Fedde Legrand</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Audien</span>
+                    </li> 
+                </ul>
+            </div><!--.Termina Escenario 1 EDM-->
+        </div><!--.Termina Escenarios-contenedor-->
+        <!--SEGUNDOS ESCENARIOS-->
+        <p class="dia">Sabado 22</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde"> <!--Segundo escenario Rock-->
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Red Hot Chili Peppers</span>
+                    </li>
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deftones</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Limp Bizkit</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Papa Roach</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Lamb of God</span>
+                    </li> 
+                </ul>
+            </div><!--.Termina Escenario 2 Rock-->
+            <div class="escenario edm bg-amarillo"> <!--Segundo escenario EDM-->
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Paul Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Eric Prdyz</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Ferry Corsten</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vini Vici</span>
+                    </li> 
+                </ul>
+            </div><!--.Termina Escenario 2 EDM-->
+        </div><!--.Termina Escenarios-contenedor-->
+    </section>
+    <section id="galeria" class="galeria contenedor"> <!--Inicio de Galeria-->
+        <h3>GALERIA</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section> <!--termina galeria-->
+    <section id="boletos" class="boletos bg-verde"> <!-- Inicio boletos-->
+        <h3>Boletos</h3>
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase"><!--pase Basico-->
+                <p class="nombre-pase">Pase 1 Dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>%100</p>
+                </footer>
+            </div>
+            <div class="premium pase"> <!--Pase Vip-->
+                <p class="nombre-pase">Pase 2 Dia</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                        <li>Camisa del Evento</li>
+                        <li>Acceso Vip</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>%180</p>
+                </footer>
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <p>Rock & EDM Festival. Todos lo derechos reservados</p>
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+</html>
